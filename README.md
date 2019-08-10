@@ -1,13 +1,10 @@
-# Hello Friend NG
+# Hello Friendly
 
-![Hello Friend NG](https://dsh.re/d27822)
+<!-- TODO: Add image like: ![Hello Friendly](https://dsh.re/d27822) -->
 
+## General information
 
-
-## General informations
-
-This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit).
-
+This theme is my take on the great [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng) theme.
 
 ## Features
 
@@ -18,14 +15,14 @@ This theme was highly inspired by the [hello-friend](https://github.com/panr/hug
 - Fully responsive
 - Support for social
 
-#### Built-in shortcodes
+### Built-in shortcodes
 
 - **`image`** (prop required: **`src`**; props optional: **`alt`**, **`position`** (**left** is default | center | right), **`style`**)
   - eg: `{{< image src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}`
 - **`figure`** (same as `image`, plus few optional props: **`caption`**, **`captionPosition`** (left | **center** is default | right), **`captionStyle`**
   - eg: `{{< figure src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" caption="Hello Friend!" captionPosition="right" captionStyle="color: red;" >}}`
 
-#### Code highlighting
+### Code highlighting
 
 By default the theme is using PrismJS to color your code syntax. All you need to do is to wrap you code like this:
 
@@ -39,19 +36,20 @@ By default the theme is using PrismJS to color your code syntax. All you need to
 
 ## How to start
 
-You can download the theme manually by going to [https://github.com/rhazdon/hugo-theme-hello-friend-ng.git](https://github.com/rhazdon/hugo-theme-hello-friend-ng.git) and pasting it to `themes/hello-friend-ng` in your root directory.
+You can download the theme manually by going to [https://github.com/niklas-heer/hugo-theme-hello-friendly.git](https://github.com/rhazdon/hugo-theme-hello-friendly.git) and pasting it to `themes/hello-friendly` in your root directory.
 
 You can also clone it directly to your Hugo folder:
 
-```
-$ git clone https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
+```bash
+git clone https://github.com/niklas-heer/hugo-theme-hello-friendly.git themes/hello-friendly
 ```
 
 If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
 
+```bash
+git submodule add https://github.com/niklas-heer/hugo-theme-hello-friendly.git themes/hello-friendly
 ```
-$ git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
-```
+
 ### Favicon
 
 Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate these files, put them into your site's static folder:
@@ -70,10 +68,10 @@ Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate these 
 
 The theme doesn't require any advanced configuration. Just copy:
 
-```
+```toml
 baseurl = "/"
 languageCode = "en-us"
-theme = "hello-friend-ng"
+theme = "hello-friendly"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -82,7 +80,7 @@ theme = "hello-friend-ng"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "Homepage and blog by Djordje Atlialp"
+  description = "Homepage and blog by Niklas Heer"
   keywords = "homepage, blog, science, informatics, development, programming"
   images = [""]
 
@@ -93,21 +91,21 @@ theme = "hello-friend-ng"
 
 [languages]
   [languages.en]
-    title = "Hello Friend NG"
+    title = "Hello Friendly"
     subtitle = "A simple theme for Hugo"
     keywords = ""
     copyright = ""
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "hello friend ng"
+      logoText = "hello friendly"
       logoHomeLink = "/"
     # or
     #
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
-	# You can create a language based menu
+  # You can create a language based menu
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
@@ -130,47 +128,42 @@ theme = "hello-friend-ng"
     url        = "/posts"
 ```
 
-
 ## How to run your site
 
 From your Hugo root directory run:
 
-```
-$ hugo server -t hello-friend-ng
+```bash
+hugo server -t hello-friendly
 ```
 
 and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to refresh your browser every single time.
-
 
 ## How to edit the theme
 
 If you really want to edit the theme, you need to install Node dependencies. To do this, go to the theme directory (from your Hugo root directory):
 
-```
-$ cd themes/hello-friend-ng
+```bash
+cd themes/hello-friendly
 ```
 
 and then run:
 
+```bash
+npm install
 ```
-$ npm install
-```
-
 
 ## How to contribute
 
-If you spot any bugs, please use [Issue Tracker](https://github.com/rhazdon/hugo-theme-hello-friend-ng/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/rhazdon/hugo-theme-hello-friend-ng/pulls).
-
+If you spot any bugs, please use [Issue Tracker](https://github.com/niklas-heer/hugo-theme-hello-friendly/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/rhazdon/hugo-theme-hello-friendly/pulls).
 
 ## Third Party
 
-  - [normalize.css](https://github.com/necolas/normalize.css)
-  - [Feather Open Source Icons](https://github.com/feathericons/feather)
-  - [Flag Icon](https://github.com/lipis/flag-icon-css)
-
+- [normalize.css](https://github.com/necolas/normalize.css)
+- [Feather Open Source Icons](https://github.com/feathericons/feather)
+- [Flag Icon](https://github.com/lipis/flag-icon-css)
 
 ## Licence
 
-Copyright © 2019 Djordje Atlialp
+Copyright © 2019 Niklas Heer
 
-The theme is released under the MIT License. Check the [original theme license](https://github.com/rhazdon/hugo-theme-hello-friend-ng/blob/master/LICENSE.md) for additional licensing information.
+The theme is released under the MIT License. Check the [original theme license](https://github.com/niklas-heer/hugo-theme-hello-friendly/blob/master/LICENSE.md) for additional licensing information.
