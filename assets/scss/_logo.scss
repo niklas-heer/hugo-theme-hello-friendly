@@ -2,16 +2,32 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  flex: 0 0 auto;
   font-weight: bold;
   font-display: auto;
-  font-family: monospace, monospace;
 
   img {
     height: 44px;
   }
 
+  @mixin greater-icon($stroke-width: 3px, $width: .95rem, $height: 100%) {
+    .greater-icon {
+      width: $width;
+      height: $height;
+
+      path {
+        stroke: currentColor;
+        stroke-width: $stroke-width;
+      }
+    }
+  }
+
   &__mark {
     margin-right: 5px;
+    align-items: center;
+    margin-right: 5px;
+
+    @include greater-icon(8px);
   }
 
   &__text {
@@ -22,7 +38,7 @@
     display: inline-block;
     width: 10px;
     height: 1rem;
-    background: #fe5186;
+    background: #448aff;
     margin-left: 5px;
     border-radius: 1px;
     animation: cursor 1s infinite;
