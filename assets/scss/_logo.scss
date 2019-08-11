@@ -4,7 +4,6 @@
   text-decoration: none;
   flex: 0 0 auto;
   font-weight: bold;
-  font-display: auto;
 
   img {
     height: 44px;
@@ -23,7 +22,7 @@
   }
 
   &__mark {
-    margin-right: 5px;
+    display: inline-flex;
     align-items: center;
     margin-right: 5px;
 
